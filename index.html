@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Go Kanban! - Revolutionise your workflow</title>
+
+		<meta name="description" content="Learning Kanban way">
+		<meta name="author" content="Aftab Alam">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+    <section>
+        <section>
+            <h1>
+                <br>
+            </h1>
+<h1>
+            <font color="#ea9999" style="font-size: 135.72px; font-style: inherit; font-variant: inherit;">
+                <br>
+            </font>
+            </h1>
+<h1>
+<font color="#ea9999" style="font-size: 135.72px; font-style: inherit; font-variant: inherit;">GO</font>
+            <span style="font-size: 135.72px;"> KANBAN</span>
+            <font color="#ea9999" style="font-size: 135.72px; font-style: inherit; font-variant: inherit;">!</font>
+            <br>
+</h1>
+<div>
+            <font color="#ea9999">Applying kanban thinking</font>
+        </div>
+    </section>
+    <section>
+        <h2 style="font-style: normal; font-variant: normal;">A BASIC REFRESHER...</h2>
+<div>
+        <b>Lean + Agile</b>
+    </div>
+<div>Set of values and principles that outline how to</div>
+<div>succeed with product development</div>
+<div>
+    <br>
+</div>
+<div>
+<b>Scrum + XP + Kanban</b>
+</div>
+<div>Put this principles into practice</div>
+<div>
+<br>
+</div>
+<div>*Scrum - Sprint planning meetings</div>
+<div>**XP - Pair programming</div>
+<div>***Kanban - Limit work in progress</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">TAKEAWAY*</h2>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+    <b>
+    <i>or&nbsp;</i>disclaimer</b>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+<br>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">This presentation wouldn't explore kanaban to its core,</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+<i>or would talk &nbsp;gibberish</i>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+    <i>
+    <br>
+</i>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+    <i>this would start from very basic and understand Kanban in its role&nbsp;</i>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+    <i>to achieve the goals of Lean and Agile, in small, easily digestable steps</i>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+    <i>beside, yoy'll also know</i>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+<i>How kanban can benefit you as an individual and</i>
+</div>
+<div style="font-size: 35.80729293823242px; font-style: normal; font-variant: normal;">
+<i>how you could apply it in your personal thinking</i>
+</div>
+</section>
+</section>
+<section>
+    <section>
+        <h1 style="font-style: normal; font-variant: normal;">
+            <span style="font-size: 135.72px;">
+                <br>
+            </span>
+        </h1>
+<h1 style="font-style: normal; font-variant: normal;">
+        <span style="font-size: 135.72px;">
+            <br>
+        </span>
+        </h1>
+<h1 style="font-style: normal; font-variant: normal;">
+<span style="font-size: 135.72px;">KANBAN?<font color="#ea9999">&nbsp;</font>
+    </span>
+    <span style="color: rgb(234, 153, 153);">WHAT?</span>
+    <br>
+</h1>
+<h2>
+    <div style="font-size: 36.4963493347168px; font-style: normal; font-variant: normal; text-transform: none;">
+        <br>
+    </div>
+</h2>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">WHAT?</h2>
+<div>Literally, Kanban is Japanese for "visual cards"</div>
+<div>or "sign board"</div>
+<div>
+    <br>
+</div>
+<div>Pioneered at <b>Toyota</b> in the 1950s, &nbsp;is the term used</div>
+<div>for visual and physical signaling system that ties</div>
+<div>together the whole lean production system.</div>
+<div>
+<br>
+</div>
+<div>
+<i>It's popping up in &nbsp;offices &nbsp;around the globe to boost</i>
+</div>
+<div>
+<i>efficiency.</i>
+</div>
+<h2>
+<div style="font-size: 36.66102600097656px; font-style: normal; font-variant: normal; text-transform: none;">
+    <br>
+</div>
+</h2>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">TECHNICALLY SPEAKING,</h2>
+<div>
+    <br>
+</div>
+<div>
+<div>"Kanban &nbsp;system &nbsp;for &nbsp;software &nbsp;development" &nbsp;now simply&nbsp;</div>
+<div>referred as "Kanban" was pioneered in 2004 by David Anderson</div>
+<div>as a more direct implemenation of&nbsp;</div>
+<div>
+<b>Lean Thinking</b> and</div>
+<div>
+<i>Theory of constraints*</i>
+</div>
+<div>
+<br>
+</div>
+<div>
+<font style="font-size: 32px;">So Kanban as applied to software development is</font>
+</div>
+<div>
+<font style="font-size: 32px;">quite new, &nbsp;Kanban as used in lean&nbsp;</font>
+</div>
+<div>
+<font style="font-size: 32px;">production is more than half century old.</font>
+</div>
+<div>
+<font style="font-size: 24px;" color="#4a86e8">
+    <i>http://en.wikipedia.org/wiki/Theory_of_Constraints</i>
+</font>
+</div>
+</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">AS TOYOTA EXPLAINS,</h2>
+<h2 style="font-style: normal; font-variant: normal;">
+    <img src="img/assistive/toyota.gif" style="font-size: 75.96px; max-width: none; max-height: none; width: 917.3585007121263px; height: 481.720194659964px;">
+</h2>
+</section>
+</section>
+<section>
+    <section>
+        <div>
+            <br>
+        </div>
+<div>
+        <br>
+    </div>
+<div>
+    <br>
+</div>
+<div>
+<h1 style="font-style: normal; font-variant: normal;">
+<span style="font-size: 135.72px;">
+    <font color="#ea9999">
+        <br>
+    </font>
+</span>
+</h1>
+<h1 style="font-style: normal; font-variant: normal;">
+<span style="font-size: 135.72px;">
+<font color="#ea9999">KANBAN&nbsp;</font>
+</span>
+<font color="#ffffff">HOW</font>
+<span style="color: rgb(234, 153, 153);">?</span>
+</h1>
+</div>
+<div>
+<span style="color: rgb(234, 153, 153);">How it can be brought in picture</span>
+</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">
+        <br>
+        </h2>
+<h2 style="font-style: normal; font-variant: normal;">
+<span style="font-size: 75.96px;">GROUND RULES.</span>
+        <br>
+</h2>
+<div>To start with, Kanban relies on few surprisingly <span>simple</span>
+</div>
+<div>
+        <span>rules</span>
+    </div>
+<div>
+    <span>
+        <i>but that don't implicate that the game's easy too...</i>
+    </span>
+</div>
+<div>
+<span>
+    <i>
+    <br>
+</i>
+</span>
+</div>
+<h3>
+<ol>
+<li>
+<span style="text-align: center;">
+<font color="#ffff00">VISUALIZE</font>
+</span>
+<br>
+</li>
+<li>
+<span style="text-align: center;">
+<font color="#ffff00">LIMIT</font>
+</span>
+<br>
+</li>
+<li>
+<span style="text-align: center;">
+<font color="#ffff00">ANALYZE</font>
+</span>
+<br>
+</li>
+</ol>
+</h3>
+<div>
+<span>
+    <i>
+    <br>
+</i>
+</span>
+</div>
+<div>
+<span>
+    <i>
+    <br>
+</i>
+</span>
+</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">
+        <br>
+    </h2>
+<h2 style="font-style: normal; font-variant: normal;">VISUALIZE</h2>
+<div style="font-size: 36.66102600097656px; font-style: normal; font-variant: normal;">
+<div style="font-size: 36.66102600097656px; font-variant: normal;">
+    <font style="font-size: 42px;">
+        <b>
+        <i>the workflow</i>
+    </b>
+</font>
+</div>
+<div style="font-size: 36.66102600097656px; font-style: normal; font-variant: normal;">
+<font style="font-size: 24px;">
+    <br>
+</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<font style="font-size: 72px;">?</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<font style="font-size: 32px;">split the work into pieces, write each item on a card, and put &nbsp;</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<font style="font-size: 32px;">the card on a wall</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<font style="font-size: 32px;">Use named columns to illustrate where each item is in&nbsp;</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<font style="font-size: 32px;">the workflow</font>
+</div>
+</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">
+        <br>
+    </h2>
+<h2 style="font-style: normal; font-variant: normal;">LIMIT</h2>
+<div style="font-size: 36.66102600097656px; font-style: normal; font-variant: normal;">
+<div style="font-size: 36.66102600097656px; font-variant: normal;">
+    <font style="font-size: 42px;">
+        <b>
+        <i>work in progress(WIP)</i>
+    </b>
+</font>
+</div>
+<div style="font-size: 36.66102600097656px; font-variant: normal;">
+<font style="font-size: 42px;">
+    <b>
+    <i>
+    <br>
+</i>
+</b>
+</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<font style="font-size: 42px;">Assign explicit limits to how many items may be in progress&nbsp;at each workflow state</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+    <font style="font-size: 42px;">
+        <br>
+    </font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+    <font style="font-size: 42px;">
+        <br>
+    </font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+    <font style="font-size: 42px;" color="#fff2cc">say 5, or 7...just what you think you could</font>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+    <font style="font-size: 42px;" color="#fff2cc">comfortably see at a time</font>
+</div>
+</div>
+</section>
+<section>
+    <h2 style="font-style: normal; font-variant: normal;">
+        <br>
+    </h2>
+<h2 style="font-style: normal; font-variant: normal;">MEASURE</h2>
+<div style="font-size: 36.66102600097656px; font-style: normal; font-variant: normal;">
+<b>
+    <i>and manage cycle time</i>
+</b>
+<br>
+</div>
+<div style="font-size: 36.66102600097656px; font-style: normal; font-variant: normal;">
+<b>
+<br>
+</b>
+</div>
+<div style="font-style: normal; font-variant: normal;">
+<p style="font-style: normal; font-variant: normal;">
+<font style="font-size: 32px;">Average the time to complete one item, sometimes called&nbsp;<b>&nbsp;lead time&nbsp;</b>.&nbsp;</font>
+</p>
+<p style="font-style: normal; font-variant: normal;">
+<font style="font-size: 32px;">Optimize the process<br>to make the cycle time as small and predictable as possible.</font>
+</p>
+</div>
+</section>
+<section>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>In a typical software world,</div>
+    <div>the scenario could easily be described in following manner</div>
+</section>
+<section>
+    <img src="img/assistive/one.png">
+</section>
+<section>
+    <img src="img/assistive/two.png">
+</section>
+<section>
+    <img src="img/assistive/three.png">
+</section>
+<section>
+    <img src="img/assistive/four.png">
+</section>
+<section>
+    <img src="img/assistive/five.png">
+</section>
+<section>
+    <img src="img/assistive/six.png">
+</section>
+<section>
+    <img src="img/assistive/seven.png">
+</section>
+<section>
+    <img src="img/assistive/eight.png">
+</section>
+<section>
+    <h2>
+        <img src="img/assistive/nine.png">
+        <br>
+    </h2>
+</section>
+<section>
+    <img src="img/assistive/ten.png">
+</section>
+<section>
+    <img src="img/assistive/eleven.png">
+</section>
+<section>
+    <h2>
+        <br>
+    </h2>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>&amp; a few days later...</div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+</section>
+<section>
+    <img src="img/assistive/twelve.png">
+</section>
+</section>
+<section>
+    <section>
+        <h1 style="font-style: normal; font-variant: normal;">
+            <font color="#ffffff" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">
+                <br>
+            </font>
+        </h1>
+<h1 style="font-style: normal; font-variant: normal;">
+        <font color="#ffffff" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">
+            <br>
+        </font>
+        </h1>
+<h1 style="font-style: normal; font-variant: normal;">
+<font color="#ffffff" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">KANBAN</font>
+        <font color="#ea9999" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">&nbsp;WHY?</font>
+</h1>
+    </section>
+    <section>
+        <h2>
+            <br>
+        </h2>
+        <h2>CHANGE IS CONSTANT,</h2>
+        <div>and you can't escape it...you should gracefully tackle it</div>
+        <div>to succeed in your life and processes.</div>
+        <div>
+            <br>
+        </div>
+        <div>we need such a way of working which keep us or our&nbsp;</div>
+        <div>team focused on what we are doing and allow &nbsp;to see and analyze the problems occurring and take necessary&nbsp;</div>
+        <div>actions. &nbsp;<b>Kanban &nbsp;</b>way of working <b>
+            <i>is awesome because&nbsp;</i>
+        </b>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+</section>
+<section>
+<div>
+    <div>
+        <ul>
+            <li style="text-align: left; " class="fragment" data-fragment-index="0">
+                <font style="font-size: 24px;">
+                    <i>
+                    <span style="text-align: center;">is about understanding the whole process, defining and analyzing problem areas</span>
+                    <br>
+                </i>
+            </font>
+        </li>
+        <li style="text-align: left; " class="fragment" data-fragment-index="1">
+            <font style="font-size: 24px;">
+                <i>
+                <span style="text-align: center;">is about eliminating waste, inconsistencies and unreasonable requirements and increasing efficiency</span>
+                <br>
+            </i>
+        </font>
+    </li>
+    <li style="text-align: left; " class="fragment" data-fragment-index="2">
+        <font style="font-size: 24px;">
+            <i>
+            <span style="text-align: center;">is about making positive, incremental and evolutionary change</span>
+            <br>
+        </i>
+    </font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="3">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">is about making workflow visible</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="4">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">is about limiting the amount of work in progress</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="5">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">is about evolving current processes for excellence</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="6">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">is about disciplined execution and continuous innovation</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="7">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">is a way to organize chaos through prioritization and clear focus</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="8">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">can be applied to existing processes</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="9">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">helps to see a problem forming</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="10">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">helps not to lose clarity on what to do the next and what's most important</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="11">
+    <font style="font-size: 24px;">
+        <i>
+        <span style="text-align: center;">helps to see the big picture</span>
+        <br>
+    </i>
+</font>
+</li>
+<li style="text-align: left; " class="fragment" data-fragment-index="12">
+    <span style="text-align: center;">
+        <font style="font-size: 24px;">
+            <i>respects people's ability to absorb change</i>
+        </font>
+    </span>
+    <br>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<section>
+    <section>
+        <div>
+            <br>
+        </div>
+<div>
+        <br>
+    </div>
+<div>
+<h1 style="font-style: normal; font-variant: normal;">
+    <font color="#ffffff" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">
+        <br>
+    </font>
+    </h1>
+<h1 style="font-style: normal; font-variant: normal;">
+<font color="#ffffff" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">KANBAN</font>
+    <font color="#ea9999" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">&nbsp;AROUND</font>
+</h1>
+</div>
+<div>
+    <font color="#ea9999">
+        <span>what people are saying.....and doing</span>
+    </font>
+</div>
+</section>
+<section>
+    <img src="img/tweets/four.jpg" class="absolute-element fragment" style="position: absolute; max-height: none; max-width: none; width: 745px; height: 122px; z-index: 8; left: 31px; top: 126px;" data-fragment-index="0">
+    <img src="img/tweets/six.jpg" class="absolute-element fragment" style="position: absolute; max-height: none; max-width: none; width: 741px; height: 120px; z-index: 7; left: 3px; top: 330px;" data-fragment-index="1">
+    <img src="img/tweets/three.jpg" class="absolute-element fragment" style="position: absolute; max-height: none; max-width: none; width: 744px; height: 122px; z-index: 4; left: 88px; top: 43px;" data-fragment-index="2">
+    <span>&nbsp;</span>
+    <img src="img/tweets/two.jpg" class="absolute-element fragment" style="position: absolute; max-height: none; max-width: none; width: 744px; height: 122px; z-index: 10; left: 80px; top: 422px;" data-fragment-index="3">
+    <img src="img/tweets/five.jpg" class="absolute-element fragment" style="position: absolute; max-height: none; max-width: none; width: 747px; height: 122px; z-index: 6; left: 107px; top: 239px;" data-fragment-index="4">
+    <h2 class="absolute-element" style="position: absolute; width: 963px; height: 321px; z-index: 9; left: 6px; top: 476px;">
+        <br>
+    </h2>
+</section>
+<section>
+    <img src="img/around/BagSS7BCQAA6meJ.jpg" style="width: 802.81159391337px; height: 602.4393685271494px; max-height: none; max-width: none;">
+</section>
+<section>
+    <img src="img/around/BW3tHvTCQAAu7z-.png" style="width: 717.1973935494638px; height: 563.7783420184071px; max-height: none; max-width: none;">
+</section>
+<section>
+    <img src="img/around/Be2dbTgIYAAQQaC.jpg">
+</section>
+<section>
+    <img src="img/around/BZDSMH0IgAAlZvg.jpg" style="width: 800.0490136226655px; height: 598.824027297595px; max-height: none; max-width: none;">
+</section>
+<section>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+    <div class="fragment">
+        <h1 style="font-style: normal; font-variant: normal;">
+            <font color="#ffffff" style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;">KANBAN&nbsp;</font>
+            <span style="font-size: 42px; color: rgb(234, 153, 153);">isn't&nbsp;</span>
+        </h1>
+        <h1 style="font-style: normal; font-variant: normal;">
+            <font style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;" color="#ea9999">"RAAMBAAND"</font>
+        </h1>
+    </div>
+    <div class="fragment">
+        <font color="#ea9999">
+            <span>but it could be, if &nbsp;you start liking it</span>
+        </font>
+    </div>
+    <div class="fragment">
+        <font>
+            <span>and for God's sake..stop thinking about the party afterwards :)</span>
+        </font>
+    </div>
+    <div>
+        <font style="font-family: inherit; font-style: inherit; font-variant: inherit; font-weight: inherit;" color="#ea9999">
+            <br>
+        </font>
+    </div>
+</section>
+<section>
+    <h1>
+        <br>
+    </h1>
+    <h1>
+        <span style="font-size: 135.72px;">THE END</span>
+        <br>
+        </h1>
+    				<h3>BY Aftab / aalam.in</h3>
+        <div>code available at &nbsp;<i>
+            <font color="#a4c2f4">https://github.com/one-aalam/go-kanban</font>
+        </i>
+    </div>
+</section>
+</div>
+
+ 
+
+			
+				
+
+			
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
